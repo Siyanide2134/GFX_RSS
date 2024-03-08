@@ -36,6 +36,25 @@ def backlight_off(ch, event):
 touch.on(3, backlight_off)
 #Minus button. Disables backlight.
 
+#Allows the custom assignment of RSS feeds. Delete if you only intend on showing one.
+def feed_1(ch, event):
+    if event == 'press':
+        url = "https://magpi.raspberrypi.com/feed"
+        print("MagPi")
+touch.on(0, feed_1)
+
+def feed_2(ch, event):
+    if event == 'press':
+        url = "https://magpi.raspberrypi.com/feed"
+        print("MagPi")
+touch.on(1, feed_2)
+def feed_3(ch, event):
+    if event == 'press':
+        url = "https://magpi.raspberrypi.com/feed"
+        print("MagPi")
+touch.on(2, feed_3)
+#End of link-switching code
+
 #These variables are a good starting point for customization.
 #Any TTF in the same folder as this project (likely downloads) will work.
 font = ImageFont.truetype("Orbitron-Regular.ttf", 10)
